@@ -67,17 +67,17 @@ driver.get("https://orteil.dashnet.org/cookieclicker/")
 #  In this video we created a bot that clicks on cookies on a cookie clicking website then buys products that make more cookies.  
 
 
-# driver.implicitly_wait(5)
+driver.implicitly_wait(5)
 
-# cookie = driver.find_element_by_id("bigCookie")
-# cookie_count = driver.find_element_by_id("cookies")
+cookie = driver.find_element_by_id("bigCookie")
+cookie_count = driver.find_element_by_id("cookies")
 # items = [driver.find_element_by_id("productPrice" + str(i)) for i in range(1,-1,-1)]
 
-# actions = ActionChains(driver)
-# actions.click(cookie)
+actions = ActionChains(driver)
+actions.click(cookie)
 
-# for i in range(50000000000):
-#     actions.perform()
+for i in range(50000000000):
+    actions.perform()
     # count = int(cookie_count.split(" ")[0])
     # for item in items:
     #     value = int(item.text)
